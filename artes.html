@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Artes | Meu Portfólio</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Designs Gráficos</h1>
+    </header>
+
+
+    <nav>
+        <a href="index.html">Início</a>
+    </nav>
+
+
+    <main>
+
+        <!-- ARTES GRÁFICAS -->
+        <section id="trabalhos">
+
+            <h2>Unicell celulares e informática</h2>
+
+            <div class="galeria">
+
+                <!-- ARTE 1 -->
+                <div class="trabalho">
+                    <img
+                        src="assets/arteg1.png"
+                        alt="Redmi Pad"
+                        onclick="abrirImagem(this.src)"
+                    >
+
+                    <h3>Redmi Pad</h3>
+
+                    <p>Arte de Promoção</p>
+                </div>
+
+
+                <!-- ARTE 2 -->
+                <div class="trabalho">
+                    <img
+                        src="assets/arteg2.png"
+                        alt="JBL Boombox 3"
+                        onclick="abrirImagem(this.src)"
+                    >
+
+                    <h3>JBL Boombox 3</h3>
+
+                    <p>Arte de Promoção</p>
+                </div>
+
+
+                <!-- ARTE 3 -->
+                <div class="trabalho">
+                    <img
+                        src="assets/arteg3.png"
+                        alt="Itel P65"
+                        onclick="abrirImagem(this.src)"
+                    >
+
+                    <h3>Itel P65</h3>
+
+                    <p>Apresentação de Produto</p>
+                </div>
+
+
+                <!-- ARTE 4 -->
+                <div class="trabalho">
+                    <img
+                        src="assets/arteg4.png"
+                        alt="Arte 4"
+                        onclick="abrirImagem(this.src)"
+                    >
+
+                    <h3>Promoção de Iphones</h3>
+
+                    <p>Arte de Promoção</p>
+                </div>
+
+
+                <!-- ARTE 5 -->
+                <div class="trabalho">
+                    <img
+                        src="assets/arteg5.png"
+                        alt="Arte 5"
+                        onclick="abrirImagem(this.src)"
+                    >
+
+                    <h3>Promoção Redmi A5</h3>
+
+                    <p>Arte de Promoção</p>
+                </div>
+
+
+                <!-- ARTE 6 -->
+                <div class="trabalho">
+                    <img
+                        src="assets/arteg6.png"
+                        alt="Arte 6"
+                        onclick="abrirImagem(this.src)"
+                    >
+
+                    <h3>Black M6 Pro</h3>
+
+                    <p>Arte de Apresentação</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ARTES ANIMADAS -->
+        <section class="trabalhos">
+
+            <h2>Artes Animadas / Motions</h2>
+
+            <div class="galeria">
+
+                <!-- VÍDEO 1 -->
+                <div class="trabalho">
+
+                    <video
+                        muted
+                        onclick="abrirVideo(this.querySelector('source').src)"
+                    >
+                        <source
+                            src="assets/gt20.mp4"
+                            type="video/mp4"
+                        >
+                    </video>
+
+                    <h3>infinix gt20 Pro</h3>
+
+                    <p>Apresentação de Produto</p>
+                </div>
+
+
+                     <!-- VÍDeO 2 -->
+                <div class="trabalho">
+
+                    <video
+                        muted
+                        onclick="abrirVideo(this.querySelector('source').src)"
+                    >
+                        <source
+                            src="assets/precisando de um celular com um desempenho e camera espetaculares.mp4"
+                            type="video/mp4"
+                        >
+                    </video>
+
+                    <h3>MI 14T</h3>
+
+                    <p>Apresentação de Produto</p>
+
+
+                </div>
+
+                       <!-- VÍDeO 3 -->
+                <div class="trabalho">
+
+                    <video
+                        muted
+                        onclick="abrirVideo(this.querySelector('source').src)"
+                    >
+                        <source
+                            src="assets/bateu aquela fome.mp4"
+                            type="video/mp4"
+                        >
+                    </video>
+
+                    <h3>Arte Varanda's</h3>
+
+                    <p>Postagem para Redes Sociais</p>
+
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- MODAL PARA IMAGEM E VÍDEO -->
+
+    <div
+        id="modalImagem"
+        class="modal-imagem"
+        onclick="fecharImagem()"
+    >
+
+        <span class="fechar">&times;</span>
+
+
+        <!-- IMAGEM GRANDE -->
+        <img
+            id="imagemGrande"
+            src=""
+            alt="Imagem ampliada"
+            onclick="event.stopPropagation()"
+        >
+
+
+        <!-- VÍDEO GRANDE -->
+        <video
+            id="videoGrande"
+            controls
+            onclick="event.stopPropagation()"
+        >
+        </video>
+
+    </div>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

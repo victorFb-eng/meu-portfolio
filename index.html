@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Meu Portfólio</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+
+        <nav>
+            <a href="#sobre">Sobre Mim</a>
+            <a href="#trabalhos">Trabalhos</a>
+            <a href="#contato">Contato</a>
+        </nav>
+
+        <div class="perfil">
+
+    <div class="foto-perfil">
+        <img src="assets/fotoperfil.pgn.jpg" alt="Victor Hugo">
+    </div>
+
+    <h1>Victor Hugo</h1>
+
+    <p>Estudante de Engenharia de Software</p>
+
+</div>
+    </header> 
+
+
+    <main>
+
+        <!-- SOBRE MIM -->
+
+        <section id="sobre">
+
+            <h2>Sobre Mim</h2>
+
+            <p>
+                Olá! Meu nome é Victor Hugo. Sou estudante de Engenharia de Software
+                e estou começando minha jornada na área de tecnologia.
+            </p>
+
+            <p>
+                Atualmente estou aprendendo programação, Desings Graficos e Edição, desenvolvendo meus primeiros
+                projetos e sendo esse meu Primeiro site feito do 0, busco sempre aprender coisas novas e melhorar minhas habilidades.
+            </p>
+
+        </section>
+
+
+        <!-- TRABALHOS -->
+
+        <section id="trabalhos">
+
+            <h2>Meus Trabalhos</h2>
+
+            <p>
+            Alguns dos Meus Projetos
+            </p>
+
+
+            <div class="carrossel">
+
+                <button class="seta" onclick="moverCarrossel(-1)">
+                    ❮
+                </button>
+
+
+                <div class="galeria">
+
+                    <!-- ARTES -->
+
+                    <div class="trabalho"
+                         onclick="window.location.href='artes.html'">
+
+                        <img src="assets/arteg3.png" alt="Artes">
+
+                        <h3>Designs</h3>
+
+                        <p>
+                            aqui você encontra alguns dos meus Desings Graficos
+                        </p>
+
+                    </div>
+
+
+                   
+
+
+                    <!-- FOTOS -->
+
+                    <div class="trabalho"
+                         onclick="window.location.href='fotos.html'">
+
+                        <img src="fotos/flor1.jpeg" alt="Fotos">
+
+                        <h3>Galeria</h3>
+
+                        <p>   Fotos de Mostruario e Editadas </p>
+
+                    </div>
+            
+                </div>
+
+
+                <button class="seta" onclick="moverCarrossel(1)">
+                    ❯
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONTATO -->
+
+       <!-- CONTATO -->
+
+<section id="contato">
+
+    <h2>Contatos</h2>
+
+    <div class="contatos-links">
+
+        <a href="https://wa.me/5567996355745" target="_blank">
+            WhatsApp
+        </a>
+
+        <a href="mailto:victorhugoferreirabrizola@gmail.com">
+            E-mail
+        </a>
+
+    </div>
+
+</section>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

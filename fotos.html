@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Fotos | Meu Portfólio</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Galeria</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Início</a>
+    </nav>
+
+    <main>
+
+        <section id="trabalhos">
+
+            <h2>Fotos Editadas</h2>
+
+            <p>Fotos Tiradas Para Treino</p>
+
+            <div class="galeria">
+
+                <div class="trabalho">
+                    <img src="fotos/flor1.jpeg" alt="Foto 1">
+                    <h3>Edição de luz e cores</h3>
+                </div>
+
+                <div class="trabalho">
+                    <img src="fotos/flor5.jpeg" alt="Foto 2">
+                    <h3>Edição de luz e cores</h3>
+                    <p></p>
+                </div>
+
+                <div class="trabalho">
+                    <img src="fotos/flor6.jpeg" alt="Foto 3">
+                    <h3>Edição de luz e cores</h3>
+                </div>
+
+            </div>
+
+        </section>
+
+         <section id="trabalhos">
+
+            <h2>Unicell</h2>
+
+            <p>Fotos Tiradas Para Posatagens Nas Redes Sociais  </p>
+
+            <div class="galeria">
+
+                <div class="trabalho">
+                    <img src="fotos/cll3.jpeg" alt="Foto 1">
+                    <h3>Detalhes da Camera</h3>
+                </div>
+
+                <div class="trabalho">
+                    <img src="fotos/cll4.jpeg" alt="Foto 2">
+                    <h3>Celular com detalhe da caixa</h3>
+                    <p></p>
+                </div>
+
+                <div class="trabalho">
+                    <img src="fotos/cll6.jpeg" alt="Foto 3">
+                    <h3>Cameras S26U</h3>
+                </div>
+            </div>
+
+            <div class="galeria">
+                <div class="trabalho">
+                    <img src="fotos/cll2.jpeg" alt="Foto 1">
+                    <h3>Remoção de mão e ajuste de Luz Quente</h3>
+                </div>
+
+                <div class="trabalho">
+                    <img src="fotos/cll5.jpeg" alt="Foto 2">
+                    <h3>Enquadramento e Apresentação de produto</h3>
+                    <p></p>
+                </div>
+
+                <div class="trabalho">
+                    <img src="fotos/cll7.jpeg" alt="Foto 3">
+                    <h3>Remoção de mão</h3>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- MODAL DA IMAGEM -->
+
+    <div class="modal-imagem" id="modalImagem">
+
+        <span class="fechar" id="fechar">&times;</span>
+
+        <img id="imagemModal" src="" alt="Imagem ampliada">
+
+    </div>
+
+    <!-- JAVASCRIPT -->
+
+    <script>
+
+        const imagens = document.querySelectorAll(".trabalho img");
+
+        const modal = document.getElementById("modalImagem");
+
+        const imagemModal = document.getElementById("imagemModal");
+
+        const fechar = document.getElementById("fechar");
+
+
+        imagens.forEach(function(imagem) {
+
+            imagem.addEventListener("click", function() {
+
+                imagemModal.src = imagem.src;
+
+                imagemModal.alt = imagem.alt;
+
+                modal.style.display = "flex";
+
+            });
+
+        });
+
+
+        fechar.addEventListener("click", function() {
+
+            modal.style.display = "none";
+
+        });
+
+
+        modal.addEventListener("click", function(event) {
+
+            if (event.target === modal) {
+
+                modal.style.display = "none";
+
+            }
+
+        });
+
+
+        document.addEventListener("keydown", function(event) {
+
+            if (event.key === "Escape") {
+
+                modal.style.display = "none";
+
+            }
+
+        });
+
+    </script>
+
+</body>
+
+</html>
